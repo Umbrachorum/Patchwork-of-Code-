@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="../js/redirect.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/JobAPI.js"></script>
+    <script src="../js/edit_user.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JoBoard</title>
+</head>
+<body>
+<header>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#">three</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper purple" id="pimp_my_navbar"></div>
+    </nav>
+</header>
+<main>
+    <section class="container section">
+        <div class="row">
+            <div class="col s12 m6 l6 offset-m3 offset-l3">
+                <h4 class="center-align">Add Your CV</h4>
+                <form action="#">
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>File</span>
+                            <input placeholder="Add your CV" type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l6 offset-m3 offset-l3">
+
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <i class="material-icons">account_circle </i>
+
+                        <a href="#!" class="secondary-content"><i class="material-icons">create</i></a>
+
+                        <input placeholder="First Name"type="text" class="validate" id="first_name"/>
+                        <label for="first_name"></label>
+
+                        <input placeholder="Last Name" type="text" class="validate" id="last_name"/>
+                        <label for="last_name"></label>
+
+                        <input placeholder="Bithdate" id="birthdate" type="date" class="validate "
+                               min="1900-01-01"/>
+                        <label for="birthdate">Birthdate</label>
+
+                        <input placeholder="06-**-**-**-**" type="text" class="validate" id="phone_number"/>
+                        <label for="phone_number"></label>
+
+                        <input placeholder="zaboubou@gmail.com"type="text" class="validate" id="email"/>
+                        <label for="email"></label>
+                    </li>
+                </ul>
+                <p id="confirmation"></p>
+                <button id="validation_edit_user" class="waves-effect btn-flat modal_button"> Send
+                    <i class="material-icons right">send</i>
+                </button>
+                <p>
+                    Rest your password
+                    <a id="reset_pwd" href="#modal_job_app" class="modal-trigger">reset!</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <div id="modals_div"></div>
+</main>
+<footer class="page-footer purple">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">Footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © ARTOULR SALSIFI Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#">More Links</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="../js/JobAPI.js"></script>
+    <script src="../js/register_login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JoBoard</title>
+  </head>
+  <body>
+    <header>
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#">three</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper purple">
+          <a href="#" class="brand-logo jobtitle">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <!-- Dropdown Trigger -->
+            <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
+                        class="material-icons right">arrow_drop_down</i></a></li> -->
+          </ul>
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">Thing</a></li>
+            <li><a href="#">Other</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container section">
+        <h4 class="center-align signup_tabs">SIGN-UP</h4>
+        <h4 class="center-align signin_tab">SIGN IN</h4>
+
+        <!--TABS login forms-->
+        <div class="container">
+          <div class="row signup_tabs">
+            <div class="col s12 m12 l12 offset-s3 offset-m3 offset-l3">
+              <ul class="signinForm tabs">
+                <li class="tab col s3"><a href="#test1">Register User</a></li>
+                <li class="tab col s3">
+                  <a class="active" href="#test2">Register Company</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--SIGNUP USER-->
+          <div class="row signup_tabs">
+            <div id="test1" class="col s12 m12 l12">
+              <div class="col s12 m6 l6 offset-s3 offset-m3 offset-l3">
+                <form action="">
+                  <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input
+                      id="icon_prefix"
+                      placeholder="First Name"
+                      id="first_name"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input
+                      id="material-icons prefix"
+                      placeholder="Last Name"
+                      id="last_name"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="last_name">Last Name</label>
+                  </div>
+
+                  <div class="input-field">
+                    <i class="material-icons prefix">phone_number</i>
+                    <input
+                      placeholder="Phone Number"
+                      id="tel"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="tel">Phone Number</label>
+                  </div>
+
+                  <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input
+                      placeholder="zabou.bloublou@gmail.com"
+                      id="email"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="email">Email</label>
+                  </div>
+
+                <div class="input-field">
+                    <i class="material-icons prefix">password</i>
+                    <input
+                      placeholder="Password"
+                      id="password"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="password">Password</label>
+                  </div>
+
+                  <div class="input-field">
+                    <i class="material-icons prefix">confirm_password</i>
+                    <input
+                      placeholder="Confirm Password"
+                      id="confirm_password"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="confirm_password">Confirm Password</label>
+                  </div>
+                </form>
+                <p>
+                  Vous possédez déjà un compte Joboard ?
+                  <a class="switch_login"
+				   href="#">Login</a>
+                </p>
+              </div>
+            </div>
+
+            <!--SIGNUP COMPANY-->
+            <div id="test2" class="col s12 m12 l12">
+              <div class="col s12 m6 l6 offset-s3 offset-m3 offset-l3">
+                <form action="">
+                  <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input
+                      id="icon_prefix"
+                      placeholder="Name"
+                      id="name"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="first_name">Name</label>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <textarea
+                        id="icon_prefix2"
+                        class="materialize-textarea"
+                      ></textarea>
+                      <label for="icon_prefix2">Description</label>
+                    </div>
+                  </div>
+
+                  <div class="input-field">
+                    <i class="material-icons prefix">location_on</i>
+                    <input
+                      id="icon_prefix"
+                      placeholder="City"
+                      id="name"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="name">City</label>
+                  </div>
+
+                  <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input
+                      placeholder="zabou.bloublou@gmail.com"
+                      id="email"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="email">Email</label>
+                  </div>
+
+                  <div class="input-field">
+                    <i class="material-icons prefix">password</i>
+                    <input
+                      placeholder="Password"
+                      id="password"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="password">Password</label>
+                  </div>
+
+                  <div class="input-field">
+                    <i class="material-icons prefix">confirm_password</i>
+                    <input
+                      placeholder="Confirm Password"
+                      id="confirm_password"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="confirm_password">Confirm Password</label>
+                  </div>
+                </form>
+                <p>
+                  Vous possédez déjà un compte Joboard ?
+                  <a class="switch_login" href="#">Login</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--SIGNIN-->
+        <div class="row signin_tab">
+          <div class="col s12 m6 l6 offset-s3 offset-m3 offset-l3">
+            <form>
+              <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input
+                  placeholder="zabou.bloublou@gmail.com"
+                  id="email"
+                  type="text"
+                  class="validate"
+                />
+                <label for="email">Email</label>
+              </div>
+
+              <div class="input-field">
+                <i class="material-icons prefix">password</i>
+                <input
+                  placeholder="Password"
+                  id="password"
+                  type="text"
+                  class="validate"
+                />
+                <label for="password">Password</label>
+              </div>
+            </form>
+            <p>
+              Vous ne possédez pas de compte Joboard ?
+              <a id="switch_signup" href="#">Créez le !</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer purple">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">Footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © ARTOULR SALSIFI Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#">More Links</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

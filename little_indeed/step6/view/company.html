@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="../js/redirect.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/applyModal.js"></script>
+    <script src="../js/pagination.js"></script>
+    <script src="../js/JobAPI.js"></script>
+    <script src="../js/edit_company.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+    />
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JoBoard</title>
+</head>
+<body>
+<header>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#">three</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper purple" id="pimp_my_navbar"></div>
+    </nav>
+</header>
+<main>
+    <section class="container section">
+        <h4 class="center-align">Joboard's Company</h4>
+        <div class="row">
+            <div class="col s12 m6 l6 offset-s3 offset-m3 offset-l3">
+
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <img src="iconProfil.png" alt="" class="circle">
+                        <a href="#!" class="secondary-content"><i class="material-icons">create</i></a>
+                        <input placeholder="Name"type="text" class="validate" id="name"/>
+                        <label for="name"></label>
+
+                        <input placeholder="Description" id="description" type="text"
+                               class="validate"/>
+                        <label for="description">description</label>
+
+						<div class="input-field">
+							<select id="city_id" name="city_id"></select>
+						 </div>
+                        <label for="city_id">City</label>
+
+                        <input placeholder="company@gmail.com" type="text" class="validate" id="email"/>
+                        <label for="email"></label>
+                    </li>
+                </ul>
+                <p id="confirmation"></p>
+                <button id="validation_edit_company" class="waves-effect btn-flat modal_button"> Edit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="page-footer purple">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">Footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © ARTOULR SALSIFI Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#">More Links</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
