@@ -1,0 +1,22 @@
+push float(2.56)
+push int32(34)
+push int32(21)
+mul
+add
+store 0
+push float(0.34)
+push int32(12)
+push int32(23)
+add
+add
+push float(0.34)
+push int32(12)
+push int32(23)
+add
+add
+mul
+load 0
+mul
+dump
+exit
+
