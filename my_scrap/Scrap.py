@@ -28,7 +28,7 @@ def parse(conf, driver):
     while not is_last_page:
         tests = driver.find_element_by_xpath(conf.element[1])
         offers = tests.find_elements_by_tag_name(conf.element[2])
-        for i in range(1, 50):
+        for i in range(1, conf.nb):
             titles = offers[i].find_elements_by_xpath(conf.element[3])
             print("Titre : ", titles[i].text)
             image = offers[i].find_elements_by_xpath(conf.element[4])
