@@ -1,1 +1,0 @@
-listOfElem = ["_nkw", "//*[@class='srp-results srp-list clearfix']", "li", "//h3[@class='s-item__title']", "//img[@class='s-item__image-img']" ,"src", "//span[@class='s-item__price']", "nav.pagination a.pagination__next", "a.pagination__next icon-link aria-hidden", "arial-disabled"]
