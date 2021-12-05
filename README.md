@@ -31,7 +31,7 @@
 - Basic operator
 
 ## Scraper 
-[made-with-python]( https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+[![forthebadge made-with-python](https://forthebadge.com/images/badges/made-with-python.svg)](https://docs.python.org/3/)
 - Scraper 
 - Auto configuration
 - Multi Website
