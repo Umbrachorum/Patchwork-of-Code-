@@ -16,7 +16,7 @@
 
 ## Joboard
 [![forthebadge made-with-javascript](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://developer.mozilla.org/fr/docs/Web/JavaScript) 
-[![forthebadge made-with-javascript](https://github.com/Umbrachorum/Patchwork-of-Code-/tree/main/logo)](https://laravel.com/docs/8.x/installation) 
+[![forthebadge made-with-laravel](https://github.com/Umbrachorum/Patchwork-of-Code-/tree/main/logo/made-with-laravel.svg)](https://laravel.com/docs/8.x/installation) 
 - Indeed Like
 - 3 weeks project
 - PHP/Laravel/Sanctum
