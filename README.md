@@ -16,7 +16,7 @@
 
 ## Joboard
 [![forthebadge made-with-javascript](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://developer.mozilla.org/fr/docs/Web/JavaScript) 
-![Alt text](./logo/tree/main/made-with-laravel.svg)
+![Alt text](./logo/made-with-laravel.svg)
 - Indeed Like
 - 3 weeks project
 - PHP/Laravel/Sanctum
