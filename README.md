@@ -9,7 +9,7 @@
 
 ## Bomberman 
 [![forthebadge made-with-c++](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://en.cppreference.com/w/)
-[![Alt text](./logo/made-with-raylib.svg)](https://www.php.net/docs.php
+[![Alt text](./logo/made-with-raylib.svg)](https://www.php.net/docs.php)
 - 2 weeks project
 - Raylib integration
 - Abstraction
@@ -35,7 +35,7 @@
 
 ## Scraper 
 [![forthebadge made-with-python](https://forthebadge.com/images/badges/made-with-python.svg)](https://docs.python.org/3/)
-[![Alt text](./logo/made-with-selenium.svg)](https://www.php.net/docs.php
+[![Alt text](./logo/made-with-selenium.svg)](https://www.php.net/docs.php)
 - Scraper 
 - Auto configuration
 - Multi Website
