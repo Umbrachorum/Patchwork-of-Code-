@@ -33,7 +33,7 @@
 - Memory manage
 - Basic operator
 
-## [Scraper](./my_srap)
+## [Scraper](./my_scrap)
 [![forthebadge made-with-python](https://forthebadge.com/images/badges/made-with-python.svg)](https://docs.python.org/3/)
 [![Alt text](./logo/made-with-selenium.svg)](https://selenium-python.readthedocs.io/)
 - Scraper 
