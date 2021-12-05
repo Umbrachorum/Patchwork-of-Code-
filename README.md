@@ -7,7 +7,7 @@
 - Command handling
 - Memory manage
 
-## Bomberman 
+## [Bomberman](./first_3d_game)
 [![forthebadge made-with-c++](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://en.cppreference.com/w/)
 [![Alt text](./logo/made-with-raylib.svg)](https://www.raylib.com/)
 - 2 weeks project
@@ -15,7 +15,7 @@
 - Abstraction
 - Memory manage
 
-## Joboard
+## [Joboard](./little_indeed)
 [![forthebadge made-with-javascript](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://developer.mozilla.org/fr/docs/Web/JavaScript) 
 [![Alt text](./logo/made-with-php.svg)](https://www.php.net/docs.php)
 [![Alt text](./logo/made-with-laravel.svg)](https://laravel.com/docs/8.x/installation)
@@ -25,7 +25,7 @@
 - PHP/Laravel/Sanctum
 - JS/HTML/CSS
 
-## Command Interpretor
+## [Command Interpretor](./little_interpretor)
 [![forthebadge made-with-c++](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://en.cppreference.com/w/)
 - 1 week project
 - Abstraction
@@ -33,7 +33,7 @@
 - Memory manage
 - Basic operator
 
-## Scraper 
+## [Scraper](./my_srap)
 [![forthebadge made-with-python](https://forthebadge.com/images/badges/made-with-python.svg)](https://docs.python.org/3/)
 [![Alt text](./logo/made-with-selenium.svg)](https://selenium-python.readthedocs.io/)
 - Scraper 
@@ -43,7 +43,7 @@
 - Json conversion
 - (Only made for training)
 
-## Trader
+## [Trader](./trade)
 [![forthebadge made-with-c++](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://en.cppreference.com/w/)
 - Trader UTC/BTC/ETH
 - Bot
