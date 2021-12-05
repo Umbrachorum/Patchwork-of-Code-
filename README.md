@@ -6,7 +6,7 @@
 - Command handling
 - Memory manage
 
-## Bomberman [made-with-c++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+## Bomberman [](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)
 - 2 weeks project
 - Raylib integration
 - Abstraction
