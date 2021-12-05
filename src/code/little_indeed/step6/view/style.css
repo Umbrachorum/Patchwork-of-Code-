@@ -1,0 +1,234 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+
+/***** JOB CARDS AND MODAL ******/
+
+.job {
+	height: 420px;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+.custom_card_job{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.job_desc {
+	display: flex;
+	justify-content: space-around;
+}
+
+a.modal-trigger.btn-large.waves-effect.waves-light.purple.lighten-1 {
+	max-width: 200px;
+}
+
+.button_container {
+	display: flex;
+	/* align-content: center; */
+	justify-content: center;
+}
+
+
+.learn_more {
+	color: #ab47bc;
+	border: 2px solid #ab47bc;
+	border-radius: 12px;
+}
+
+/* .modal_button {
+	color: rgba(128, 0, 128, 0.493);
+	border: 2px solid rgba(128, 0, 128, 0.596);
+	border-radius: 12px;
+} */
+
+.modal_button {
+	color: #ab47bc;
+	border: 2px solid #ab47bc;
+	border-radius: 12px;
+}
+
+.modal_button_validation {
+	color: green;
+	border: 2px solid green;
+	border-radius: 12px;
+}
+
+.modal_button_remove {
+	color: darkred;
+	border: 2px solid darkred;
+	border-radius: 12px;
+}
+
+
+/* .modal_registered {
+	height: 40vh !important;
+}
+.modal_unregistered {
+	height: 85vh !important;
+} */
+
+.modal_button:hover {
+	cursor: pointer;
+}
+
+div.card-image.waves-effect.waves-block:hover {
+	cursor: default;
+}
+
+.jobtitle {
+	padding-left: 2rem !important;
+}
+
+div.card-content p {
+	font-size: 1.4em !important;
+}
+
+.modal_error {
+	color: #d50000;
+}
+
+.div-job-title {
+	border-bottom: 1.5px solid black;
+	background-color: #4a148c;
+	color: white;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+div.custom_card_job h4 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+p#desc {
+	max-width: 980px;
+	word-break: break-all;
+}
+p#desc_hidden {
+	display: inline-block;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+div.custom_card_job p {
+	font-size: 1.15rem;
+}
+
+/******* LOGIN *******/
+
+#panell{
+	margin-top: 100px;
+	padding: 0px;
+  }
+  #loginbtn{
+	float: right;
+	margin-bottom: 10px;
+	margin-right: 10px;
+  }
+  #title{
+	background-color: #4a148c;
+	color: white;
+	padding: 8px;
+	margin-top: 0px
+  }
+  form{
+	padding:0px;
+	border-radius: 3px;
+	box-sizing: border-box;
+  }
+  #username,#password{
+   margin-left: 20px;
+   margin-right: 20px;
+  }
+  #checkbox{
+   margin-left: 30px;
+  }
+
+.signup_tabs {
+	display: none;
+}
+
+/***** FONTS ******/
+
+.raleway_title_bold {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+.raleway_title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+.raleway_subtitle {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+.roboto_title {
+    font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+.roboto_subtitle {
+    font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+.roboto_text {
+    font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+/****** ADMIN *******/
+
+.admin_container {
+	max-width: 1750px !important;
+}
+
+p.job_admin_desc {
+	display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 1700px) {
+	p.job_admin_desc {
+		max-width: 350px;
+	}
+}
+
+.row_container {
+	margin: 0 !important;
+}
+
+div.row_container.container div.row {
+	max-width: 1000px !important;
+}
+
+ul.collection.with-header.table_container {
+	max-height: 1050px !important;
+	overflow: auto;
+}
+.modal_updated {
+	color: rgba(0, 128, 0, 0.733);
+}
+
+div.container.admin_container div#add_btn a {
+	width: 100%;
+}
+
+.modal_button_validation {
+    color: darkred;
+    border: 2px solid darkred;
+    border-radius: 12px;
+}

@@ -1,0 +1,19 @@
+push float(566.0)
+push int32(2805)
+push float(500)
+div
+sub
+push float(566.0)
+push int32(2805)
+push float(500)
+div
+sub
+push float(566.0)
+push int32(2805)
+push float(500)
+div
+sub
+mul
+mul
+dump
+exit

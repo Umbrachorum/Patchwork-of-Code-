@@ -1,0 +1,32 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.job {
+	height: 450px !important;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+.jobtitle {
+	padding-left: 2rem !important;
+}
+
+
+div.card-content p {
+	font-size: 1.4em !important;
+}
+
+div.card-image.waves-effect.waves-block.waves-light {
+	border-bottom: 1.5px solid black;
+	background-color: #4a148c;
+	color: white;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}

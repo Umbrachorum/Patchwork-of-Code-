@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <script src="../js/redirect.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/JobAPI.js"></script>
+    <script src="../js/register_login.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>JoBoard</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="nav-wrapper purple" id="pimp_my_navbar">
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="container section">
+        <h4 class="center-align signup_tabs">SIGN-UP</h4>
+        <h4 class="center-align signin_tab">SIGN IN</h4>
+
+        <!--TABS login forms-->
+        <div class="container">
+            <div class="row signup_tabs">
+                <div class="col s12 m6 l6 offset-m3 offset-l3">
+                    <ul class="signinForm tabs">
+                        <li class="tab col s6"><a class="active" href="#test1">Register User</a></li>
+                        <li class="tab col s6">
+                            <a href="#test2">Register Company</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--SIGNUP USER-->
+            <div class="row signup_tabs">
+                <div id="test1" class="col s12 m12 l12">
+                    <div class="col s12 m6 l6 offset-m3 offset-l3">
+                        <form action="">
+                            <div class="input-field">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input placeholder="First Name" id="first_name_register_user"
+                                       type="text"
+                                       class="validate"/>
+                                <label for="first_name_register_user">First Name</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input
+                                        placeholder="Last Name"
+                                        id="last_name_register_user"
+                                        type="text"
+                                        class="validate"
+                                />
+                                <label for="last_name_register_user">Last Name</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">location_on</i>
+                                <input placeholder="Birthdate" id="birthdate_register_user" type="date" class="validate "
+                                       min="1900-01-01"/>
+                                <label for="birthdate_register_user">Birthdate</label>
+                            </div>
+                            <div class="input-field">
+								<i class="material-icons prefix">phone</i>
+                                <input
+                                        placeholder="Phone Number"
+                                        id="tel_register_user"
+                                        type="text"
+                                        class="validate"
+                                />
+                                <label for="tel_register_user">Phone Number</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">email</i>
+                                <input
+                                        placeholder="zabou.bloublou@gmail.com"
+                                        id="email_register_user"
+                                        type="text"
+                                        class="validate"
+                                />
+                                <label for="email_register_user">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">password</i>
+                                <input
+                                        placeholder="Password"
+                                        id="password_register_user"
+                                        type="password"
+                                        class="validate"
+                                />
+                                <label for="password_register_user">Password</label>
+                            </div>
+
+                            <div class="input-field">
+								<i class="material-icons prefix">password</i>
+                                <input placeholder="Confirm Password" id="password_confirm_register_user" type="password"
+                                       class="validate"/>
+                                <label for="password_confirm_register_user">Confirm Password</label>
+                            </div>
+                        </form>
+                        <button id="button_register_user" class="waves-effect btn-flat modal_button">Send
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <p>
+                            Vous possédez déjà un compte Joboard ?
+                            <a class="switch_login" href="#">Login</a>
+                        </p>
+                    </div>
+                </div>
+                <!--SIGNUP COMPANY-->
+                <div id="test2" class="col s12 m12 l12">
+                    <div class="col s12 m6 l6 offset-m3 offset-l3">
+                        <form action="">
+                            <div class="input-field">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input placeholder="Name" id="name_register_company" type="text" class="validate"/>
+                                <label for="name_register_company">Name</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">brush</i>
+                                <input placeholder="Description" id="description_register_company" type="text"
+                                       class="validate"/>
+                                <label for="description_register_company">description</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">location_on</i>
+                                <select id="city_id">
+                                    <option value="1"></option>
+                                    <option value="2"></option>
+                                    <option value="3"></option>
+                                </select>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">email</i>
+                                <input placeholder="zabou.bloublou@gmail.com" id="email_register_company" type="text"
+                                       class="validate"/>
+                                <label for="email_register_company">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">password</i>
+                                <input placeholder="Password" id="password_register_company" type="password"
+                                       class="validate"/>
+                                <label for="password_register_company">Password</label>
+                            </div>
+                            <div class="input-field">
+								<i class="material-icons prefix">password</i>
+                                <input placeholder="Confirm Password" id="password_confirm_register_company" type="password"
+                                       class="validate"/>
+                                <label for="password_confirm_register_company">Confirm Password</label>
+                            </div>
+                        </form>
+                        <button id="button_register_company" class="waves-effect btn-flat modal_button">Send
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <p>
+                            Vous possédez déjà un compte Joboard ?
+                            <a class="switch_login" href="#">Login</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row signin_tab">
+            <div class="col s12 m6 l12 offset-m3 offset-l3">
+                <ul class="signinForm tabs">
+                    <li class="tab col s3"><a class="active" href="#signin_1">Login User</a></li>
+                    <li class="tab col s3">
+                        <a href="#signin_2">Login Company</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--SIGNIN-->
+        <div class="row" id="signin_1">
+            <div class="col s12 m6 l6 offset-m3 offset-l3">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input placeholder="xxxxx.xxxxxx@xxxx.com" id="email_sign_in_user" type="email"
+                               class="validate"/>
+                        <label for="email_sign_in_user">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">password</i>
+                        <input placeholder="Password" id="password_sign_in_user" type="password" class="validate"/>
+                        <label for="password_sign_in_user">Password</label>
+                    </div>
+                </form>
+                <button id="validation_log_in_user" class="waves-effect btn-flat modal_button"> Send
+                    <i class="material-icons right">send</i>
+                </button>
+                <p>
+                    Vous ne possédez pas de compte Joboard ?
+                    <a id="switch_signup" href="#">Créez le !</a>
+                </p>
+            </div>
+        </div>
+        <div class="row" id="signin_2">
+            <div class="col s12 m6 l6 offset-m3 offset-l3">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input placeholder="xxxxx.xxxxxx@xxxx.com" id="email_sign_in_company" type="email"
+                               class="validate"/>
+                        <label for="email_sign_in_company">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">password</i>
+                        <input placeholder="Password" id="password_sign_in_company" type="password" class="validate"/>
+                        <label for="password_sign_in_company">Password</label>
+                    </div>
+                </form>
+                <button id="validation_log_in_company" class="waves-effect btn-flat modal_button"> Send
+                    <i class="material-icons right">send</i>
+                </button>
+                <p>
+                    Vous ne possédez pas de compte Joboard ?
+                    <a id="switch_signup" href="#">Créez le !</a>
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="page-footer purple">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">Footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © ARTOULR SALSIFI Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#">More Links</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
