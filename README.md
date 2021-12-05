@@ -1,6 +1,6 @@
 # Patchwork-of-Code-
 
-## FTP server configuration 
+## FTP server configuration [a relative link](./FTP)
 [![forthebadge made-with-c++](https://forthebadge.com/images/badges/made-with-c.svg)](http://manpagesfr.free.fr)
 - 2 weeks project
 - Server configuration
